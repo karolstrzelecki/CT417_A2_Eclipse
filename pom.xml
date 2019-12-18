@@ -33,7 +33,7 @@
 
     <dependency>
         <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
+        <artifactId>junit-jupiter-api</artifactId>
         <version>5.5.1</version>
         <scope>test</scope>
     </dependency>
@@ -53,9 +53,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                   <configuration>
-    <redirectTestOutputToFile>true</redirectTestOutputToFile>
-    <reportsDirectory>../shippable/testresults</reportsDirectory>
-  </configuration>
+				    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+				    <reportsDirectory>../shippable/testresults</reportsDirectory>
+				  </configuration>
+					  <dependencies>
+							  <dependency>
+							  		<groupId>org.junit.jupiter</groupId>
+							        <artifactId>junit-jupiter-engine</artifactId>
+							        <version>5.5.1</version>
+							  
+							  </dependency>
+					     
+					  
+					  </dependencies>
             </plugin>
 
         </plugins>
