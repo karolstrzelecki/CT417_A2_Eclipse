@@ -12,7 +12,7 @@ class AppTest {
 
 
 
-    @org.junit.jupiter.api.Test
+    @Test
     void userNameCheck() {
         Student student = new Student("John","Doe",1995, 5, 5);
 
