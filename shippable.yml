@@ -19,8 +19,8 @@ before_install:
 
 
 after_success:
-  - mvn test
   - mvn clean cobertura:cobertura
+  - mvn test
 
 
 
