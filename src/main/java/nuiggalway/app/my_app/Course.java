@@ -53,6 +53,29 @@ public class Course {
         modules.add(module);
     }
 
+	public String getCourseName() {
+		return courseName;
+	}
+
+	public List<Module> getModules() {
+		return modules;
+	}
+
+	public List<Student> getStudents() {
+		return students;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+    
+    
+    
+
 
 
 

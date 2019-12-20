@@ -45,6 +45,18 @@ public class Student {
 
 
 
+
+    public void addCourses(Course course) {
+        this.courses.add(course);
+
+    }
+
+    public void addModules(Module module){
+        this.modules.add(module);
+
+    }
+
+    
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
@@ -74,23 +86,12 @@ public class Student {
 
 
     }
-
-
+    
+    
     public String getUserName(){
         String username = this.firstName+this.lastName+ this.getAge();
 
         return username;
-
-    }
-
-
-    public void addCourses(Course course) {
-        this.courses.add(course);
-
-    }
-
-    public void addModules(Module module){
-        this.modules.add(module);
 
     }
 
@@ -101,6 +102,16 @@ public class Student {
     public List<Course> getCourses() {
         return courses;
     }
+
+
+	
+    
+	
+	
+    
+	// I havn't done Id test because sometimes (on my notebook it doesn't indicate good number)
+	
+	
 }
 
 

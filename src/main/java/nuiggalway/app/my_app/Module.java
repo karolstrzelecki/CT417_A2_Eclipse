@@ -38,6 +38,22 @@ public class Module {
         courses.add(course);
 
     }
+    
+    public String getModuleName() {
+    	return moduleName;
+    }
+    
+    public String getId() {
+    	return id;
+    }
+    
+    public List<Course> getCourses() {
+    	return courses;
+    }
+    
+    public List<Student> getStudents(){
+    	return students;
+    }
+    
 
-    //bla bla bla bla bnla
 }
